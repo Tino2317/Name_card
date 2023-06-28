@@ -1,0 +1,126 @@
+.c-item {
+    height: 500px;
+}
+
+.f-item {
+    height: 600px;
+}
+
+
+.d-item {
+    height: 700px;
+
+}
+
+.e-item {
+    height: 500px;
+
+}
+
+.c-img {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.cc-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 35% 100%;
+}
+
+.d-img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 100%;
+}
+
+.e-img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% 80%;
+}
+
+.f-img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% 100%;
+}
+
+.k-img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 40% 100%;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.slide3 {
+    right: 0%;
+}
+
+.slide1 {
+    color: skyblue;
+    margin-bottom: 5rem
+}
+
+.slide6 {
+    margin-bottom: 6.5rem
+}
+
+.slide7 {
+    margin-bottom: 2.5rem
+}
+
+.slide2 {
+    margin-bottom: 0.5rem
+}
+
+.slide8 {
+    margin-bottom: 2rem
+}
+
+.slide9 {
+    color: skyblue;
+    margin-bottom: -1.5rem;
+}
+
+.slide5 {
+    margin-bottom: 1.5rem
+}
+
+.slide4 {
+    margin-bottom: 7.5rem
+}
+
+.slide10 {
+    color: skyblue;
+    margin-bottom: 7.5rem
+}
+
+.slide11 {
+    margin-bottom: 0.5rem;
+    right: 0%
+}
+
+.pep {
+     width: 1000;
+     position: center;
+}
+
+#barr {
+     background: green
+}
+
+#wrapper {
+     padding: 4rem
+}

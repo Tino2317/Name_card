@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<title>Tino Portfolio</title>
+		<link rel="icon" type="image/x-icon" href="./static/assets/favicon.ico" />
+		<!-- Font Awesome icons (free version)-->
+		<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+		<!-- Google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+		<!-- Core theme CSS (includes Bootstrap)-->
+		<link href="../static/css/styles.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+	integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+         <link rel="stylesheet" href="../static/styless.css">
+       
+      <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{url_for('home_page')}}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{url_for('about_page')}}">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{url_for('projects_page')}}">Skills & Projects</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{url_for('cert_page')}}">Certificate</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('./static/bg3.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+
+                        <div class="page-heading">
+                            <h1>My Projects</h1>
+                            <span class="subheading">This is what I've done...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>After obtaining my CCNA certification, I decided to combine and utilize the knowledge I gained from the certification together with the knowledge I obtained from the  python course I studied on Udemy.</p>
+                        <p>I then created labs on Cisco Packet Tracer and GNS3 to gain as much hands on practical experience that's close to the real world working environment.</p>
+                        <p>I integrated GNS3 with a virtual machine called VMware Workstation Pro. The virtual machine is essential because it allows you to work on GNS3 projects independent of your computers operating system, therefore increasing performance in the labs.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--        downloaded body-->
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Network automation using python. </font></font><span class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SSH, Netmiko and loops.</font></font></span></h2>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>Slides: (Slide left or right by clicking on indicators or sides of images.)<br>1.</b> Simple router and Cloud topology. The cloud allows me to communicate with the router through my local computer whilst the virtual machine runs in the background.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>2.</b> I configured the router to get an IP address from the DHCP server and also enabled it for SSH connectivity.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>3.</b> Used Netmiko, a python library which allows me to connect to the router through SSH.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>4.</b> SSH output in powershell </font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>5.</b> I saved the command output in a text file using a function in python called open().</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>6.</b> Netmiko also allows me to edit or configure multiple routers usings loops and lists in python.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>7.</b> Topology of multiple routers connected together.</font></font></p>
+              </div>
+              <div class="col-md-5">
+                <!--image 1-->
+                <div class="container">
+                   <div id="hero-carousel" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active c-item">
+                        <img src="./static/SSH/SSH1.png" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 1</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img src="./static/SSH/SSH2.2.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 2</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img src="./static/SSH/SSH3.3.png" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 3</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item c-item">
+                        <img src="./static/SSH/SSH4.4.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 4</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item c-item">
+                        <img src="./static/SSH/SSH5.5.png" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 5</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item c-item">
+                        <img src="./static/SSH/SSH6.6.png" class="d-block w-100 f-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 6</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item c-item">
+                        <img src="./static/SSH/SSH7.7.png" class="d-block w-100 e-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 7</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                 </div>
+              <!--image 1-->
+              </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EIGRP routing.</font></font><span class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Default route and passive-interface.</font></font></span></h2>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>Slides: <br> 1. </b>Topology diagram. I preconfigured all router interfaces and PC's with IP addresses. Each router interface is in a different subnet.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>2.</b> Router R1 shows its interfaces. I then configured an EIGRP routing protocol on all routers with an autonomous system number of 100. The network advertised is 10.0.0.0 with a classful default widcard mask of 0.255.255.255.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>3.</b> I configured a default static route on router R4 which goes to the internet and redistributed it into the EIGRP routing protocol. I also made interface f1/1 on R4 a passive interface so that internal information is not shared to the internet.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>4.</b> The routing table of router R4</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>5.</b> The routing table of router R1 and the learnt default static route "D*EX".</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>6.</b> PC1 on subnet 10.0.1.0 pings PC3 on subnet 10.1.2.0 and the ping is successful.</font></font></p>
+              </div>
+              <div class="col-md-5 order-md-1">
+              <!--image 2-->
+                <div class="container">
+                   <div id="Pt-carousel" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#Pt-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#Pt-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#Pt-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#Pt-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#Pt-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#Pt-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active c-item">
+                        <img src="./static/EP/EP1.png" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption slide1">
+                            <h5>Slide 1</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img src="./static/EP/EP2.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 2</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img src="./static/EP/EP3.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide3">
+                            <h5>Slide 3</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img src="./static/EP/EP4.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 4</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img src="./static/EP/EP5.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 5</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img src="./static/EP/EP6.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 6</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#Pt-carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#Pt-carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                 </div>
+              <!--image 2-->
+              </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+           <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Single Area OSPF.</font></font><span class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Reference bandwidth, OSPF cost, passive interface and default route.</font></font></span></h2>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>Slides:<br>1.</b> Topology diagram. I preconfigured all router interfaces and PC's with IP addresses. Each router interface is in a different subnet.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>2.</b> I configured loopback interfaces and an OSPF routing protocol on all routers. The "show ip ospf neighbor" command on R1 shows that adjacencies formed between R1 and its adjacent routers.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>3.</b> The routing table on router R3 shows all the learnt routes through OSPF.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>4.</b> I changed the reference bandwidth on all routers to 100000, so that when faster interfaces like 100Gbps are implemented, they will have a cost of 1 and have first preference.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>5.</b> For load balancing, I changed the cost for traffic moving from R1 to the 10.1.2.0 network on R4 to be equal through R2 and R5. Previously traffic from R1 only passed through R2.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>6.</b> On R4, I configured interface f1/1 to be a passive interface and advertise network 203.0.113.0 through OSPF. I also configured a default static route which I redistributed into OSPF using the " default-information originate" command.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>7.</b> Routing table of R4, showing the default static route.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>8.</b> Routing table for R2 showing the learnt default static route "O*E2".</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>9.</b> I pinged PC2 on the 10.0.2.0 network from PC3 on the 10.1.2.0 network. The ping was successful.</font></font></p>
+              </div>
+              <div class="col-md-5">
+                <!--image 3-->
+                <div class="container">
+                   <div id="kdb-carousel" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#kdb-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#kdb-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#kdb-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#kdb-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#kdb-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#kdb-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#kdb-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                      <button type="button" data-bs-target="#kdb-carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                      <button type="button" data-bs-target="#kdb-carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active d-item">
+                        <img src="./static/OS/OS1.1.png" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption slide1">
+                            <h5>Slide 1</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item d-item">
+                        <img src="./static/OS/OS2.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide7">
+                            <h5>Slide 2</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item d-item">
+                        <img src="./static/OS/OS3.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 3</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item d-item">
+                        <img src="./static/OS/OS4.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide3">
+                            <h5>Slide 4</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item d-item">
+                        <img src="./static/OS/OS5.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 5</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item d-item">
+                        <img src="./static/OS/OS6.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide6">
+                            <h5>Slide 6</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item d-item">
+                        <img src="./static/OS/OS7.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide7">
+                            <h5>Slide 7</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item d-item">
+                        <img src="./static/OS/OS8.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide7">
+                            <h5>Slide 8</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item d-item">
+                        <img src="./static/OS/OS9.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 9</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#kdb-carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#kdb-carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                 </div>
+              <!--image 3-->
+              </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Multi-Area and Multi-Access OSPF networks.</font></font><span class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Summarisation, ABR's, DR and BDR.</font></font></span></h2>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>Slides: <br> 1. </b>Routers are placed in different OSPF areas. R4 and R3 are in area 0 and R1 is in area 1. R2 and R5 are Area Border Routers (ABR's).</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>2.</b> OSPF is enabled on all routers and adjacencies are formed.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>3.</b> Routing table on R1 shows the inter area routes, "O IA".</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>4.</b> Route summarisation is performed on the two ABR's, R2 and R5.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>5.</b> R1 routing table now only shows 1 summarised route to other networks.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>6.</b> OSPF Multi-access network Topology.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>7.</b> All routers are configured for OSPF routing.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>8.</b> The "show ip ospf neighbor" command on R6 shows that R9 is the Designated Router(DR) and R8 is the Backup Designated Router(BDR).</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>9.</b> I made R6 the DR by giving it a higher OSPF priority number than the other routers.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>10.</b> The "show ip ospf int f0/0" on R6 shows that R6 is the DR now and R8 remains the BDR.</font></font></p>
+              </div>
+              <div class="col-md-5 order-md-1">
+              <!--image 4-->
+                <div class="container">
+                   <div id="gundo-carousel" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#gundo-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#gundo-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#gundo-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#gundo-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#gundo-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#gundo-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#gundo-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                      <button type="button" data-bs-target="#gundo-carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                      <button type="button" data-bs-target="#gundo-carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                      <button type="button" data-bs-target="#gundo-carousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active e-item">
+                        <img src="./static/MS/MS1.png" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption slide1">
+                            <h5>Slide 1</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item e-item">
+                        <img src="./static/MS/MS2.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 2</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item e-item">
+                        <img src="./static/MS/MS3.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide3">
+                            <h5>Slide 3</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item e-item">
+                        <img src="./static/MS/MS4.4.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide7">
+                            <h5>Slide 4</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item e-item">
+                        <img src="./static/MS/MS5.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 5</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item e-item">
+                        <img src="./static/MS/MS6.6.png" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption slide1">
+                            <h5>Slide 6</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item e-item">
+                        <img src="./static/MS/MS7.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 7</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item e-item">
+                        <img src="./static/MS/MS8.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide7">
+                            <h5>Slide 8</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item e-item">
+                        <img src="./static/MS/MS9.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide7">
+                            <h5>Slide 9</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item e-item">
+                        <img src="./static/MS/MS10.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 10</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#gundo-carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#gundo-carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                 </div>
+              <!--image 4-->
+              </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">VLAN's and Inter-VLAN routing.</font></font><span class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">VTP and Native VLAN's</font></font></span></h2>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>Slides:<br>1.</b> Topology diagram. There are no vlans configured on the switches and the switchports are in default mode.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>2.</b> I configured the trunk links and set SW1 as a vtp server, SW2 is in transparent mode and SW3 is a vtp client.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>3.</b> I configured vlans on SW1 and SW2, SW3 learns vlans from SW1.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>4.</b> The learnt vlan table of SW3.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>5.</b> Configured native vlans on trunk links and set switchports in their correct vlans on SW1 and SW3.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>6.</b> I configured inter-vlan routing by enabling layer 3 routing on SW2</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>7.</b> Pinged Sales1 PC on the 10.10.20.0 network from ENG1 PC on the 10.10.10.0 network. The ping was successful.</font></font></p>
+              </div>
+              <div class="col-md-5">
+                <!--image 5-->
+                <div class="container">
+                   <div id="erling-carousel" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#erling-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#erling-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#erling-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#erling-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#erling-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#erling-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#erling-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active c-item">
+                        <img src="./static/VL/VL1.png" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption slide1">
+                            <h5>Slide 1</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img src="./static/VL/VL2.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide2">
+                            <h5>Slide 2</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item c-item">
+                        <img src="./static/VL/VL3.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 3</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item c-item">
+                        <img src="./static/VL/VL4.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 4</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item c-item">
+                        <img src="./static/VL/VL5.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 5</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item c-item">
+                        <img src="./static/VL/VL6.6.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide7">
+                            <h5>Slide 6</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item c-item">
+                        <img src="./static/VL/VL7.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide8">
+                            <h5>Slide 7</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#erling-carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#erling-carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                 </div>
+              <!--image 5-->
+              </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HSRP, STP, NAT, Access-lists.</font></font><span class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Pre-emption and Translations.</font></font></span></h2>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>Slides: <br> 1. </b>Topology consists of service provider routers(SP1 and SP2), edge routers(R1 and R2), collapsed core and distribution switches(CD1 and CD2), access layer switches(Acc3 and Acc4), and two PC's.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>2.</b> Configured R1 and R2 with the virtual IP address. R2 became the active router and R1 is the standby router.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>3.</b> I then made R1 the active router by giving it a higher HSRP priority number than R2. The pre-emption command allows R1 to stay active when its functioning.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>4.</b> I made CD1 the root bridge so it can align with R1, the HSRP active gateway.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>5.</b> I disabled the Spanning Tree Protocol(STP) on all switchports where a single end host is connected.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>6.</b> I pinged the virtual IP address from PC1, It was successful.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>7.</b> Network Address Translation(NAT) topology.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>8.</b> I configured R1 with Dynamic NAT overload.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>9.</b> PC2 pinged an IP address on the internet, It was successful.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>10.</b> The debugging command allows us to see the translations on R1 from PC2.</font></font></p>
+              </div>
+              <div class="col-md-5 order-md-1">
+              <!--image 6-->
+                <div class="container">
+                   <div id="kun-carousel" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#kun-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#kun-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#kun-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#kun-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#kun-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#kun-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#kun-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                      <button type="button" data-bs-target="#kun-carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                      <button type="button" data-bs-target="#kun-carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                      <button type="button" data-bs-target="#kun-carousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active f-item">
+                        <img src="./static/NAT/NAT1.png" class="d-block w-100 cc-img" alt="...">
+                        <div class="carousel-caption slide9">
+                            <h5>Slide 1</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item f-item">
+                        <img src="./static/NAT/NAT2.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 2</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item f-item">
+                        <img src="./static/NAT/NAT3.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide5">
+                            <h5>Slide 3</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item f-item">
+                        <img src="./static/NAT/NAT4.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide5">
+                            <h5>Slide 4</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item f-item">
+                        <img src="./static/NAT/NAT5.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide5">
+                            <h5>Slide 5</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item f-item">
+                        <img src="./static/NAT/NAT6.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide7">
+                            <h5>Slide 6</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item f-item">
+                        <img src="./static/NAT/NAT7.png" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption slide1">
+                            <h5>Slide 7</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item f-item">
+                        <img src="./static/NAT/NAT8.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide5">
+                            <h5>Slide 8</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item f-item">
+                        <img src="./static/NAT/NAT9.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 9</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item f-item">
+                        <img src="./static/NAT/NAT10.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide4">
+                            <h5>Slide 10</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#kun-carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#kun-carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                 </div>
+              <!--image 6-->
+              </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Etherchannel and Port-security.</font></font><span class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> LACP and PAgp.</font></font></span></h2>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>Slides:<br>1.</b> Topology diagram consists of access layer switches(Acc3 and Acc4), collapsed distribution and core layer switches(CD1 and CD2) and PC's.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>2.</b> I configured links between Acc3, CD1, and CD2 with the Link Aggregation Control Protocol(LACP) etherchannel.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>3.</b> The "show etherchannel summary" command shows the port-channels created which provide fault tolerance, high overall bandwidth, redundancy and load balancing.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>4.</b> The links between Acc4, CD1 and CD2, I configured the Port Aggregation Protocol(PAgP) etherchannel.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>5.</b> Acc4 shows the port-channels created by PAgP which have the same benefits as LACP.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>6.</b> Simple network topology of a switch and two PC's</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>7.</b> I disabled all unused ports on SW1. This prevents unauthorised hosts from plugging into them to gain access to the network.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>8.</b> I pinged PC2 from PC1 to generate a mac-address table on SW1.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>9.</b> I then configured the two functioning ports with port-security.</font></font></p>
+                <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>10.</b> The "show port-security command" verifies the port-security configurations on both ports.</font></font></p>
+              </div>
+              <div class="col-md-5">
+                <!--image 5-->
+                <div class="container">
+                   <div id="leo-carousel" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#leo-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#leo-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#leo-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#leo-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#leo-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#leo-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#leo-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                      <button type="button" data-bs-target="#leo-carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                      <button type="button" data-bs-target="#leo-carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                      <button type="button" data-bs-target="#leo-carousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active f-item">
+                        <img src="./static/FN/FN1.png" class="d-block w-100 k-img" alt="...">
+                        <div class="carousel-caption slide10">
+                            <h5>Slide 1</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item f-item">
+                        <img src="./static/FN/FN2.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide11">
+                            <h5>Slide 2</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item f-item">
+                        <img src="./static/FN/FN3.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide3">
+                            <h5>Slide 3</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item f-item">
+                        <img src="./static/FN/FN4.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 4</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item f-item">
+                        <img src="./static/FN/FN5.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide3">
+                            <h5>Slide 5</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item f-item">
+                        <img src="./static/FN/FN6.png" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption slide10">
+                            <h5>Slide 6</h5>
+                        </div>
+                      </div>
+                       <div class="carousel-item f-item">
+                        <img src="./static/FN/FN7.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Slide 7</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item f-item">
+                        <img src="./static/FN/FN8.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide7">
+                            <h5>Slide 8</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item f-item">
+                        <img src="./static/FN/FN9.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide7">
+                            <h5>Slide 9</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item f-item">
+                        <img src="./static/FN/FN10.png" class="d-block w-100 d-img" alt="...">
+                        <div class="carousel-caption slide11">
+                            <h5>Slide 10</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#leo-carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#leo-carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                 </div>
+              <!--image 5-->
+              </div>
+            </div>
+
+
+
+
+            <!-- /END THE FEATURETTES -->
+
+          </div>
+        <!--        downloaded body-->
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/tinodana-mugwazo/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/Tino2317">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/tino_mugwazo/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic"> &copy; 2023 My Portfolio</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="./static/js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    </body>
+</html>
